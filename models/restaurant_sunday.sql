@@ -1,1 +1,1 @@
-select name, open_on_sundays from {{ ref('restaurants') }} where open_on_sundays = true
+select NAME, OPEN_ON_SUNDAY from {{ source('source', 'restaurants') }} where OPEN_ON_SUNDAY::boolean = true
