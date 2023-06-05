@@ -1,1 +1,1 @@
-select * from {{ source("source", "orders") }}
+select distinct * from {{ source("source", "orders") }}
