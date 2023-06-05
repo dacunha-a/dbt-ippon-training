@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: source
+    database: DB_DBT_ADACUNHA_DEV
+    schema: source
+    tables:
+      - name: orders
+      - name: restaurants
