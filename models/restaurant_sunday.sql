@@ -1,0 +1,1 @@
+select name, open_on_sundays from {{ ref('restaurants') }} where open_on_sundays = true
