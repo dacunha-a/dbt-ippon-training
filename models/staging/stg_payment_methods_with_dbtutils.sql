@@ -1,4 +1,3 @@
-{{ config(materialized = 'table')}}
 {% set payment_methods = get_payment_methods_with_dbtutils() %}
 select 
     r.name,
