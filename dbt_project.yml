@@ -37,3 +37,7 @@ models:
     staging: 
       +materialized: ephemeral
 
+seeds:
+  dbt_ippon_training:
+    sample:
+      +schema: sample

@@ -1,3 +1,3 @@
 {{ config(materialized = 'table')}}
 
-select distinct * from {{ source("source", "orders") }}
+select * from {{ mockable_source("source", "orders", "sample_orders") }}
