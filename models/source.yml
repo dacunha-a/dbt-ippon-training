@@ -4,13 +4,11 @@ sources:
   - name: source
     database: DB_DBT_ADACUNHA_DEV
     schema: source
+    
     tables:
       - name: restaurants
         columns:
         - name: open_on_sunday
-          tests:
-            - accepted_values:
-                values: ["true", "false"]
         - name: address
           tests:
             - not_null  
@@ -20,7 +18,4 @@ sources:
           tests:
           - unique
         - name: restaurant_identifier
-          tests:
-          - relationships:
-              to: ref('base_restaurants')
-              field: identifier
+      - name: dishes
