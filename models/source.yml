@@ -5,7 +5,7 @@ sources:
     database: |
       {%- if target.name.lower() == "dev" -%} DB_DBT_ADACUNHA_DEV
       {%- elif target.name.lower() == "prod" -%} DB_DBT_ADACUNHA_PROD
-      {%- else -%} invalid_database
+      {%- else -%} DB_DBT_ADACUNHA_DEV
       {%- endif -%}
     schema: source
     
